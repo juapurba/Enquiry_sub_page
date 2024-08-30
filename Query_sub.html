@@ -1,0 +1,277 @@
+
+<html>
+    <head> 
+
+        <title> DVC Enquiry </title>
+
+<style>
+
+
+/* 
+.container {
+            margin-top: 1.25rem; 
+            margin-bottom: 1.25rem; 
+            
+        } */
+
+
+.container-main {
+    
+    color: white;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    margin: 1px; 
+    margin-top: 1rem;        
+    min-height: 65vh;
+    display: flex;   
+    justify-content: center;
+}
+
+
+
+.login-container {   
+    
+    padding: 8px;
+    padding-top: 0.6rem;
+    border-radius: 10px;
+    margin-top: 0.2rem;
+    color: black; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 40vh;
+   
+    }
+
+
+.guest-login-form {
+    display: block;
+    width: 80%;
+    align-items: start;
+    text-align: left;
+    background: rgba(137, 196, 244, 0.2);
+    margin: 1px auto;
+    padding: 1.2rem;    
+    border: 2px solid #484646;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.form-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0; 
+    background-color: rgb(28, 73, 206); 
+    color: white; 
+    text-align: center;
+    width: 100%;
+}
+
+.form-group label {
+        color: black;
+        text-align: left;
+    }
+
+
+.status-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.form-control {
+    width: 50%;
+    text-align: left;
+    margin-top: 0.7rem;
+    align-items: start;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s; 
+    }
+
+
+
+
+
+
+</style>
+
+
+    </head>
+<div class="container-main" >
+
+                      
+
+                    
+                     <div class="login-container"> 
+
+
+                    
+
+                     <div class="guest-login-form">
+                         <div class="form-heading"> Submit Your Query</div>                      
+                        
+                                        
+                        
+                        
+                <form method="POST" action="#" enctype="multipart/form-data">
+               
+
+               
+
+                <div class="form-group mb-3">
+                        <label for="name"> Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" class="form-control" required autocomplete="off">
+
+                           
+
+                </div>
+
+
+
+                <div class="form-group mb-3">
+                        <label for="mobile"> Mobile Number <span class="required">*</span></label>
+                        <input type="text" id="mobile" name="mobile" class="form-control" required autocomplete="off" >
+
+                            
+
+                </div>
+
+
+
+
+                <div class="form-group mb-3">
+                        <label for="email"> Email <span class="required">*</span></label>
+                        <input type="text" id="email" name="email" class="form-control" required autocomplete="off" >
+
+                            
+                </div>
+
+
+
+
+
+
+
+
+                <div class="form-group mb-3">
+                    <label for="query_subject"> Enquiry Subject <span class="required">*</span>
+                    <span class="green-text-small">   </span>
+                    </label> 
+                    
+                    <input type="text" id="query_subject" name="query_subject" class="form-control" rows="3" minlength="10" maxlength="60" required >
+                
+                    
+
+                </div>
+                
+                
+
+                
+                <div class="form-group mb-3">
+                            <label for="category">Enquiry Category <span class="required">*</span></label>
+                            <select id="category" name="category" class="form-control" required >
+                               
+                                <option value="" disabled selected>Select Category </option>
+                                <option value="HR" > HR </option>
+                                <option value="Pension" > Pension </option>
+                                <option value="Vendor" > Vendor </option>
+                                <option value="Consumer" > Consumer </option> 
+                                <option value="Others" > Others </option>
+
+                            </select>
+
+                           
+
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="query_details">Enquiry Details<span class="required">*</span>
+                    <span class="green-text-small">  </span>
+                    </label>
+               
+                      
+                    
+                    <input type="text" id="query_details" name="query_details" class="form-control" rows="3" minlength="10" maxlength="4000" required >
+                    
+
+                    
+              
+                
+                </div>
+
+
+                
+
+
+                
+
+
+                
+
+
+<!-- <hr class="solid1">
+
+                <div class="form-group mb-3">
+                    <label for="file1">
+                        Attachment 
+                        
+                        <small class="green-text-small">
+                               (Allowed formats: PDF, JPEG, JPG | Max size: 4 MB )
+                        </small>
+
+                        </label>
+                   
+                    <input type="file" id="file1" name="file1" class="form-control-file" accept=".pdf, .jpg, .jpeg" value="{{old('file1')}}">
+                </div> -->
+
+
+               
+
+
+            <hr class="solid1">    
+
+
+           
+            <br>
+
+
+            <div style="text-align: center;">
+
+            <button class="status-button" style="font-size: 1.2rem;"> Submit </button> 
+
+            </div>
+
+
+
+        </form>
+
+
+</div>
+
+</div>      
+
+
+
+
+            </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>
+
+
